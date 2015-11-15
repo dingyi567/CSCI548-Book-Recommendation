@@ -16,7 +16,7 @@ for vid in f_vid:
 	 prefix dbp: <http://dbpedia.org/property/>\
 	 prefix dbr:	<http://dbpedia.org/resource/>\
 	 prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#>\
-	 select  ?vid ?name ?birthDate ?nationality ?genre  ?description ?influenced ?influencedBy\
+	 select  ?x ?vid ?name ?birthDate ?nationality ?genre  ?description ?influenced ?influencedBy\
 	 where{\
 	     ?x rdf:type dbo:Writer.\
          ?x dbo:viafId ?vid.FILTER(?vid="%s"^^<http://www.w3.org/2001/XMLSchema#string>)\
@@ -47,6 +47,8 @@ for vid in f_vid:
 	print("len:  "+ str(len(rows["results"]["bindings"])))
 
 	for row in rows["results"]["bindings"]:
+
+		URI = row["x"]["value"]
 
 		try:
 			if row["name"]["value"] not in name:
@@ -90,7 +92,7 @@ for vid in f_vid:
 		except KeyError:
 			pass
 
-
+	dict1["URI"] = URI
 	dict1["vid"] = vid
 	dict1["name"] = name
 	dict1["birthDate"] = birthDate
@@ -100,8 +102,9 @@ for vid in f_vid:
 	dict1["influenced"] = influenced
 	dict1["influencedBy"] = influencedBy
 
-	with open("authorResult", 'a+') as fout:
+	with open("authorResult1", 'a+') as fout:
 		fout.write(json.dumps(dict1)+","+"\n")
+
 
 
 
