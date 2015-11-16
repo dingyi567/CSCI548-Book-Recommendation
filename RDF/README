@@ -1,0 +1,40 @@
+字段和context详见json-ld文件夹里的contex和json。
+用的schema做context，自己加了字段。文件是schemaallall.ttl
+
+
+字段例子
+{
+    "a": "Book",
+    "image": "https://d.gr-assets.com/books/1378065772l/16130318.jpg",
+    "amazonlinks": {
+        "a": "Book",
+        "image": "http://ecx.images-amazon.com/images/I/51fBzobSpyL._SY344_BO1,204,203,200_QL70_.jpg",
+        "numberOfPages": "352",
+        "isbn": "9781476704050",
+        "name": "Cain's Blood: A Novel",
+        "inLanguage": "English",
+        "description": "div> When clones of infamous serial killers escape from a secret government 。。。",
+        "publisherandedition": "Touchstone; Reprint edition (September 2, 2014)",
+        "uri": "http://localhost:8080/source/1476704058"
+    },
+    "author": {
+        "a": "Person",
+        "accountId": "75714156",
+        "name": "Geoffrey Girard",
+        "genre": "[u'http://dbpedia.org/resource/Literary_fiction', u'http://dbpedia.org/resource/Thriller_(genre)', u'http://dbpedia.org/resource/Dark_fantasy', u'http://dbpedia.org/resource/Historical_fiction', u'http://dbpedia.org/resource/Horror_fiction']",
+        "description": "Fiction author",
+        "nationalities": "American",
+        "uri": "http://dbpedia.org/resource/Geoffrey_Girard",
+        "birthDate": "1967-12-26"
+    },
+    "bookrecommendation": "[u'https://www.goodreads.com/book/show/25449476-nemesis', u'https://www.goodreads.com/book/show/17732071-worm', u'https://www.goodreads.com/book/show/17184050-pripyat', u'https://www.goodreads.com/book/show/14133313-whitespace', u'https://www.goodreads.com/book/show/11306338-the-panama-laugh']",
+    "isbn": "9781476704043",
+    "description": "。。。",
+    "inLanguage": "English",
+    "uri": "https://www.goodreads.com/book/show/16130318-cain-s-blood",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-alllinkfinal_json-context.json",
+    "numberOfPages": "324",
+    "ratingValue": "3.56",
+    "name": "Cain's Blood",
+    "fileFormat": "Hardcover"
+}

@@ -1,0 +1,30 @@
+{"@context": {
+    "image": {"@id": "http://schema.org/image"},
+    "a": "@type",
+    "amazonlinks": {"@id": "http://schema.org/amazonlinks"},
+    "influenced": {"@id": "http://schema.org/influenced"},
+    "author": {"@id": "http://schema.org/author"},
+    "bookrecommendation": {"@id": "http://schema.org/bookrecommendation"},
+    "isbn": {"@id": "http://schema.org/isbn"},
+    "description": {"@id": "http://schema.org/description"},
+    "inLanguage": {"@id": "http://schema.org/inLanguage"},
+    "nationalities": {"@id": "http://schema.org/nationalities"},
+    "birthDate": {"@id": "http://schema.org/birthDate"},
+    "uri": "@id",
+    "accountId": {"@id": "http://schema.org/accountId"},
+    "numberOfPages": {"@id": "http://schema.org/numberOfPages"},
+    "Book": {
+        "@type": "@id",
+        "@id": "http://schema.org/Book"
+    },
+    "ratingValue": {"@id": "http://schema.org/ratingValue"},
+    "name": {"@id": "http://schema.org/name"},
+    "genre": {"@id": "http://schema.org/genre"},
+    "publisherandedition": {"@id": "http://schema.org/publisherandedition"},
+    "influencedBy": {"@id": "http://schema.org/influencedBy"},
+    "Person": {
+        "@type": "@id",
+        "@id": "http://schema.org/Person"
+    },
+    "fileFormat": {"@id": "http://schema.org/fileFormat"}
+}}
