@@ -3,8 +3,8 @@
     "a": "@type",
     "amazonlinks": {"@id": "http://schema.org/amazonlinks"},
     "influenced": {"@id": "http://schema.org/influenced"},
-    "author": {"@id": "http://schema.org/author"},
     "bookrecommendation": {"@id": "http://schema.org/bookrecommendation"},
+    "author": {"@id": "http://schema.org/author"},
     "isbn": {"@id": "http://schema.org/isbn"},
     "description": {"@id": "http://schema.org/description"},
     "inLanguage": {"@id": "http://schema.org/inLanguage"},
@@ -18,8 +18,8 @@
         "@id": "http://schema.org/Book"
     },
     "ratingValue": {"@id": "http://schema.org/ratingValue"},
-    "name": {"@id": "http://schema.org/name"},
     "genre": {"@id": "http://schema.org/genre"},
+    "name": {"@id": "http://schema.org/name"},
     "publisherandedition": {"@id": "http://schema.org/publisherandedition"},
     "influencedBy": {"@id": "http://schema.org/influencedBy"},
     "Person": {
