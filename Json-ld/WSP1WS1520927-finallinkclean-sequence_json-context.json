@@ -1,0 +1,38 @@
+{"@context": {
+    "gender": {"@id": "http://schema.org/gender"},
+    "influenced": {"@id": "http://schema.org/influenced"},
+    "isbn": {"@id": "http://schema.org/isbn"},
+    "recommendTitle": {"@id": "http://schema.org/recommendTitle"},
+    "description": {"@id": "http://schema.org/description"},
+    "nationalities": {"@id": "http://schema.org/nationalities"},
+    "numberOfPages": {"@id": "http://schema.org/numberOfPages"},
+    "dbpediaURI": {"@id": "http://schema.org/dbpediaURI"},
+    "Book": {
+        "@type": "@id",
+        "@id": "http://schema.org/Book"
+    },
+    "genre": {"@id": "http://schema.org/genre"},
+    "influencedBy": {"@id": "http://schema.org/influencedBy"},
+    "image": {"@id": "http://schema.org/image"},
+    "settings": {"@id": "http://schema.org/settings"},
+    "a": "@type",
+    "amazonlinks": {"@id": "http://schema.org/amazonlinks"},
+    "authorsBooks": {"@id": "http://schema.org/authorsBooks"},
+    "recommendImage": {"@id": "http://schema.org/recommendImage"},
+    "author": {"@id": "http://schema.org/author"},
+    "recommendAuthor": {"@id": "http://schema.org/recommendAuthor"},
+    "inLanguage": {"@id": "http://schema.org/inLanguage"},
+    "birthDate": {"@id": "http://schema.org/birthDate"},
+    "uri": "@id",
+    "linkamazonURL": {"@id": "http://schema.org/linkamazonURL"},
+    "recommendURL": {"@id": "http://schema.org/recommendURL"},
+    "authorName": {"@id": "http://schema.org/authorName"},
+    "ratingValue": {"@id": "http://schema.org/ratingValue"},
+    "name": {"@id": "http://schema.org/name"},
+    "publisherandedition": {"@id": "http://schema.org/publisherandedition"},
+    "Person": {
+        "@type": "@id",
+        "@id": "http://schema.org/Person"
+    },
+    "fileFormat": {"@id": "http://schema.org/fileFormat"}
+}}

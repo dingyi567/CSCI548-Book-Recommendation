@@ -1,0 +1,3394 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix karma: <http://isi.edu/integration/karma/ontologies/model/current#> .
+@prefix schemax: <http://topbraid.org/schemax/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1a4pncr4fx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "finallinkclean-sequence.json" ;
+	km-dev:modelPublicationTime "1448267377808"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"image\"}],[{\"columnName\":\"amazon-Paperback\"}],[{\"columnName\":\"bookFormatType\"}],[{\"columnName\":\"author-URI\"}],[{\"columnName\":\"amazon-Publisher\"}],[{\"columnName\":\"amazon-ISBN-13\"}],[{\"columnName\":\"recommendname\"}],[{\"columnName\":\"amazon-BookTitle\"}],[{\"columnName\":\"amazon-BookURL\"}],[{\"columnName\":\"authorlink\"}],[{\"columnName\":\"grauthor-birthday\"}],[{\"columnName\":\"numberOfPages\"}],[{\"columnName\":\"grauthor-gender\"}],[{\"columnName\":\"author\"}],[{\"columnName\":\"ISBN\"}],[{\"columnName\":\"language\"}],[{\"columnName\":\"recommend\"}],[{\"columnName\":\"author-influenced\"},{\"columnName\":\"values\"}],[{\"columnName\":\"grauthor-books\"}],[{\"columnName\":\"grauthor-genre\"}],[{\"columnName\":\"grauthor-image\"}],[{\"columnName\":\"amazon-Language\"}],[{\"columnName\":\"grauthor-borncountry\"}],[{\"columnName\":\"setting\"}],[{\"columnName\":\"amazon-recommend-authorName\"}],[{\"columnName\":\"link\"}],[{\"columnName\":\"linkAmazon\"}],[{\"columnName\":\"recommendimg\"}],[{\"columnName\":\"amazon-recommend-URL\"}],[{\"columnName\":\"title\"}],[{\"columnName\":\"genre\"}],[{\"columnName\":\"amazon-recommend-coverImage\"}],[{\"columnName\":\"author-genre\"},{\"columnName\":\"values\"}],[{\"columnName\":\"amazon-Description\"}],[{\"columnName\":\"author-influencedBy\"},{\"columnName\":\"values\"}],[{\"columnName\":\"amazon-AuthorName\"}],[{\"columnName\":\"rate\"}],[{\"columnName\":\"description\"}],[{\"columnName\":\"amazon-recommend-title\"}],[{\"columnName\":\"amazon-ImageURL\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"image\"}],[{\"columnName\":\"amazon-Paperback\"}],[{\"columnName\":\"bookFormatType\"}],[{\"columnName\":\"author-URI\"}],[{\"columnName\":\"amazon-Publisher\"}],[{\"columnName\":\"amazon-ISBN-13\"}],[{\"columnName\":\"recommendname\"}],[{\"columnName\":\"amazon-BookTitle\"}],[{\"columnName\":\"amazon-BookURL\"}],[{\"columnName\":\"authorlink\"}],[{\"columnName\":\"grauthor-birthday\"}],[{\"columnName\":\"numberOfPages\"}],[{\"columnName\":\"grauthor-gender\"}],[{\"columnName\":\"author\"}],[{\"columnName\":\"ISBN\"}],[{\"columnName\":\"language\"}],[{\"columnName\":\"recommend\"}],[{\"columnName\":\"author-influenced\"},{\"columnName\":\"values\"}],[{\"columnName\":\"grauthor-books\"}],[{\"columnName\":\"grauthor-genre\"}],[{\"columnName\":\"grauthor-image\"}],[{\"columnName\":\"amazon-Language\"}],[{\"columnName\":\"grauthor-borncountry\"}],[{\"columnName\":\"setting\"}],[{\"columnName\":\"amazon-recommend-authorName\"}],[{\"columnName\":\"link\"}],[{\"columnName\":\"linkAmazon\"}],[{\"columnName\":\"recommendimg\"}],[{\"columnName\":\"amazon-recommend-URL\"}],[{\"columnName\":\"title\"}],[{\"columnName\":\"genre\"}],[{\"columnName\":\"amazon-recommend-coverImage\"}],[{\"columnName\":\"author-genre\"},{\"columnName\":\"values\"}],[{\"columnName\":\"amazon-Description\"}],[{\"columnName\":\"author-influencedBy\"},{\"columnName\":\"values\"}],[{\"columnName\":\"amazon-AuthorName\"}],[{\"columnName\":\"rate\"}],[{\"columnName\":\"description\"}],[{\"columnName\":\"amazon-recommend-title\"}],[{\"columnName\":\"amazon-ImageURL\"}]]" ;
+	km-dev:hasModelLabel "finallinkclean-sequence.json" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"OrganizeColumnsCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"type\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"ISBN\",
+                        \"id\": [{\"columnName\": \"ISBN\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"recommendname\",
+                        \"id\": [{\"columnName\": \"recommendname\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"image\",
+                        \"id\": [{\"columnName\": \"image\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"bookFormatType\",
+                        \"id\": [{\"columnName\": \"bookFormatType\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"rate\",
+                        \"id\": [{\"columnName\": \"rate\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"recommendimg\",
+                        \"id\": [{\"columnName\": \"recommendimg\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"title\",
+                        \"id\": [{\"columnName\": \"title\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"setting\",
+                        \"id\": [{\"columnName\": \"setting\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"genre\",
+                        \"id\": [{\"columnName\": \"genre\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"link\",
+                        \"id\": [{\"columnName\": \"link\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"language\",
+                        \"id\": [{\"columnName\": \"language\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"linkAmazon\",
+                        \"id\": [{\"columnName\": \"linkAmazon\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"numberOfPages\",
+                        \"id\": [{\"columnName\": \"numberOfPages\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"recommend\",
+                        \"id\": [{\"columnName\": \"recommend\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"description\",
+                        \"id\": [{\"columnName\": \"description\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"amazon-Publisher\",
+                        \"id\": [{\"columnName\": \"amazon-Publisher\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"amazon-BookTitle\",
+                        \"id\": [{\"columnName\": \"amazon-BookTitle\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"amazon-Paperback\",
+                        \"id\": [{\"columnName\": \"amazon-Paperback\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"amazon-AuthorName\",
+                        \"id\": [{\"columnName\": \"amazon-AuthorName\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"amazon-recommend-coverImage\",
+                        \"id\": [{\"columnName\": \"amazon-recommend-coverImage\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"amazon-recommend-authorName\",
+                        \"id\": [{\"columnName\": \"amazon-recommend-authorName\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"amazon-Language\",
+                        \"id\": [{\"columnName\": \"amazon-Language\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"amazon-ISBN-13\",
+                        \"id\": [{\"columnName\": \"amazon-ISBN-13\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"amazon-BookURL\",
+                        \"id\": [{\"columnName\": \"amazon-BookURL\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"amazon-ImageURL\",
+                        \"id\": [{\"columnName\": \"amazon-ImageURL\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"amazon-Description\",
+                        \"id\": [{\"columnName\": \"amazon-Description\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"amazon-recommend-title\",
+                        \"id\": [{\"columnName\": \"amazon-recommend-title\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"amazon-recommend-URL\",
+                        \"id\": [{\"columnName\": \"amazon-recommend-URL\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"author\",
+                        \"id\": [{\"columnName\": \"author\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"authorlink\",
+                        \"id\": [{\"columnName\": \"authorlink\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"grauthor-genre\",
+                        \"id\": [{\"columnName\": \"grauthor-genre\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"grauthor-borncountry\",
+                        \"id\": [{\"columnName\": \"grauthor-borncountry\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"grauthor-gender\",
+                        \"id\": [{\"columnName\": \"grauthor-gender\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"grauthor-link\",
+                        \"id\": [{\"columnName\": \"grauthor-link\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"grauthor-name\",
+                        \"id\": [{\"columnName\": \"grauthor-name\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"grauthor-books\",
+                        \"id\": [{\"columnName\": \"grauthor-books\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"grauthor-image\",
+                        \"id\": [{\"columnName\": \"grauthor-image\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"grauthor-birthday\",
+                        \"id\": [{\"columnName\": \"grauthor-birthday\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"author-name\",
+                        \"id\": [{\"columnName\": \"author-name\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"author-URI\",
+                        \"id\": [{\"columnName\": \"author-URI\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"children\": \"[{\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"values\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"author-influencedBy\\\"},{\\\"columnName\\\":\\\"values\\\"}]}]\",
+                        \"hideable\": false,
+                        \"name\": \"author-influencedBy\",
+                        \"id\": [{\"columnName\": \"author-influencedBy\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"children\": \"[{\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"values\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"author-influenced\\\"},{\\\"columnName\\\":\\\"values\\\"}]}]\",
+                        \"hideable\": false,
+                        \"name\": \"author-influenced\",
+                        \"id\": [{\"columnName\": \"author-influenced\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"children\": \"[{\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"values\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"author-genre\\\"},{\\\"columnName\\\":\\\"values\\\"}]}]\",
+                        \"hideable\": false,
+                        \"name\": \"author-genre\",
+                        \"id\": [{\"columnName\": \"author-genre\"}]
+                    }
+                ]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"ISBN\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/isbn\",
+                    \"DomainLabel\": \"schema:Book1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ISBN\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ISBN\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"image\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/image\",
+                    \"DomainLabel\": \"schema:Book1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"image\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"image\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"bookFormatType\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/fileFormat\",
+                    \"DomainLabel\": \"schema:Book1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"bookFormatType\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"bookFormatType\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"rate\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/ratingValue\",
+                    \"DomainLabel\": \"schema:Book1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rate\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rate\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"title\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/name\",
+                    \"DomainLabel\": \"schema:Book1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"title\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"title\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"link\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://schema.org/Book\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://schema.org/Book1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"schema:Book1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"link\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"link\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"amazon-Publisher\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book2\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/publisherandedition\",
+                    \"DomainLabel\": \"schema:Book2 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-Publisher\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-Publisher\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"amazon-BookTitle\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book2\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/name\",
+                    \"DomainLabel\": \"schema:Book2\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-BookTitle\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-BookTitle\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"amazon-Paperback\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book2\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/numberOfPages\",
+                    \"DomainLabel\": \"schema:Book2\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-Paperback\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-Paperback\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"linkAmazon\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://schema.org/Book\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://schema.org/Book2\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book2\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"schema:Book2\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"linkAmazon\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"linkAmazon\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"amazon-Language\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book2\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/inLanguage\",
+                    \"DomainLabel\": \"schema:Book2\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-Language\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-Language\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"numberOfPages\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/numberOfPages\",
+                    \"DomainLabel\": \"schema:Book1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"numberOfPages\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"numberOfPages\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"language\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/inLanguage\",
+                    \"DomainLabel\": \"schema:Book1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"language\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"language\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"amazon-ISBN-13\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book2\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/isbn\",
+                    \"DomainLabel\": \"schema:Book2\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-ISBN-13\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-ISBN-13\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"amazon-BookURL\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://schema.org/Book\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://schema.org/Book2\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book2\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"schema:Book2\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-BookURL\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-BookURL\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"amazon-ImageURL\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book2\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/image\",
+                    \"DomainLabel\": \"schema:Book2\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-ImageURL\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-ImageURL\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"amazon-Description\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book2\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/description\",
+                    \"DomainLabel\": \"schema:Book2\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-Description\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-Description\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"description\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/description\",
+                    \"DomainLabel\": \"schema:Book1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"description\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"description\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"genre\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/genre\",
+                    \"DomainLabel\": \"schema:Book1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"genre\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"genre\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"grauthor-genre\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Person\",
+                    \"DomainId\": \"http://schema.org/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/genre\",
+                    \"DomainLabel\": \"schema:Person1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"grauthor-genre\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"grauthor-genre\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"grauthor-borncountry\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Person\",
+                    \"DomainId\": \"http://schema.org/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/nationalities\",
+                    \"DomainLabel\": \"schema:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"grauthor-borncountry\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"grauthor-borncountry\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"grauthor-gender\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Person\",
+                    \"DomainId\": \"http://schema.org/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/gender\",
+                    \"DomainLabel\": \"schema:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"grauthor-gender\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"grauthor-gender\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"grauthor-image\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Person\",
+                    \"DomainId\": \"http://schema.org/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/image\",
+                    \"DomainLabel\": \"schema:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"grauthor-image\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"grauthor-image\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"grauthor-birthday\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Person\",
+                    \"DomainId\": \"http://schema.org/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/birthDate\",
+                    \"DomainLabel\": \"schema:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"grauthor-birthday\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"grauthor-birthday\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"author-influencedBy\"},
+                    {\"columnName\": \"values\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Person\",
+                    \"DomainId\": \"http://schema.org/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/influencedBy\",
+                    \"DomainLabel\": \"schema:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"author-influencedBy\\\"},{\\\"columnName\\\":\\\"values\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"author-influencedBy\\\"},{\\\"columnName\\\":\\\"values\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"author-influenced\"},
+                    {\"columnName\": \"values\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Person\",
+                    \"DomainId\": \"http://schema.org/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/influenced\",
+                    \"DomainLabel\": \"schema:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"author-influenced\\\"},{\\\"columnName\\\":\\\"values\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"author-influenced\\\"},{\\\"columnName\\\":\\\"values\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"author-genre\"},
+                    {\"columnName\": \"values\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Person\",
+                    \"DomainId\": \"http://schema.org/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/genre\",
+                    \"DomainLabel\": \"schema:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"author-genre\\\"},{\\\"columnName\\\":\\\"values\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"author-genre\\\"},{\\\"columnName\\\":\\\"values\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"recommendname\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/recommendTitle\",
+                    \"DomainLabel\": \"schema:Book1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"recommendname\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"recommendname\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"recommendimg\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/recommendImage\",
+                    \"DomainLabel\": \"schema:Book1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"recommendimg\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"recommendimg\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"setting\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/settings\",
+                    \"DomainLabel\": \"schema:Book1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"setting\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"setting\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"recommend\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/recommendURL\",
+                    \"DomainLabel\": \"schema:Book1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"recommend\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"recommend\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"amazon-recommend-coverImage\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book2\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/recommendImage\",
+                    \"DomainLabel\": \"schema:Book2\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-recommend-coverImage\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-recommend-coverImage\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"amazon-AuthorName\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book2\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/authorName\",
+                    \"DomainLabel\": \"schema:Book2\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-AuthorName\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-AuthorName\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"amazon-recommend-title\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book2\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/recommendTitle\",
+                    \"DomainLabel\": \"schema:Book2\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-recommend-title\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-recommend-title\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"amazon-recommend-URL\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book2\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/recommendURL\",
+                    \"DomainLabel\": \"schema:Book2\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-recommend-URL\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-recommend-URL\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"amazon-recommend-authorName\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Book\",
+                    \"DomainId\": \"http://schema.org/Book2\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/recommendAuthor\",
+                    \"DomainLabel\": \"schema:Book2\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-recommend-authorName\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"amazon-recommend-authorName\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"author\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Person\",
+                    \"DomainId\": \"http://schema.org/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/name\",
+                    \"DomainLabel\": \"schema:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"author\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"author\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"authorlink\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://schema.org/Person\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://schema.org/Person1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Person\",
+                    \"DomainId\": \"http://schema.org/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"schema:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"authorlink\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"authorlink\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"grauthor-books\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Person\",
+                    \"DomainId\": \"http://schema.org/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/authorsBooks\",
+                    \"DomainLabel\": \"schema:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"grauthor-books\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"grauthor-books\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"author-URI\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Person\",
+                    \"DomainId\": \"http://schema.org/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/dbpediaURI\",
+                    \"DomainLabel\": \"schema:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"author-URI\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"author-URI\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"linkAmazon\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [
+                    {
+                        \"DomainUri\": \"http://schema.org/Book\",
+                        \"DomainId\": \"http://schema.org/Book2\",
+                        \"isPrimary\": true,
+                        \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                        \"DomainLabel\": \"schema:Book2\"
+                    },
+                    {
+                        \"DomainUri\": \"http://schema.org/Book\",
+                        \"DomainId\": \"http://schema.org/Book1\",
+                        \"isPrimary\": false,
+                        \"FullType\": \"http://schema.org/linkamazonURL\",
+                        \"DomainLabel\": \"schema:Book1\"
+                    }
+                ]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"linkAmazon\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"linkAmazon\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP2:WS760504AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://schema.org/Person1\",
+                    \"edgeId\": \"http://schema.org/author\",
+                    \"edgeTargetUri\": \"http://schema.org/Person\",
+                    \"edgeSourceId\": \"http://schema.org/Book1\",
+                    \"edgeSourceUri\": \"http://schema.org/Book\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP2:WS760504AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://schema.org/Book2\",
+                    \"edgeId\": \"http://schema.org/amazonlinks\",
+                    \"edgeTargetUri\": \"http://schema.org/Book\",
+                    \"edgeSourceId\": \"http://schema.org/Book1\",
+                    \"edgeSourceUri\": \"http://schema.org/Book\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_9ffadbc3-8c0c-458b-97e3-46bf854ce439 a rr:TriplesMap .
+
+_:node1a4pncr4fx1 km-dev:hasTriplesMap km-dev:TriplesMap_9ffadbc3-8c0c-458b-97e3-46bf854ce439 .
+
+km-dev:TriplesMap_9ffadbc3-8c0c-458b-97e3-46bf854ce439 km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx2 rr:tableName "finallinkclean-sequence.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasLogicalTable _:node1a4pncr4fx2 .
+
+km-dev:TriplesMap_9ffadbc3-8c0c-458b-97e3-46bf854ce439 rr:logicalTable _:node1a4pncr4fx2 ;
+	rr:subjectMap _:node1a4pncr4fx3 .
+
+_:node1a4pncr4fx1 km-dev:hasSubjectMap _:node1a4pncr4fx3 .
+
+_:node1a4pncr4fx3 km-dev:isPartOfMapping _:node1a4pncr4fx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/Book1" ;
+	rr:class schema:Book ;
+	rr:template "{link}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_1dcaddf0-ff40-4791-a363-802ee94deffc rr:predicate schema:amazonlinks .
+
+km-dev:RefObjectMap_9f6758f9-804d-4bef-8951-fb49b9afcbfa a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_5ef36996-b5b8-434c-aba4-cb3a7472570f ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap km-dev:RefObjectMap_9f6758f9-804d-4bef-8951-fb49b9afcbfa .
+
+km-dev:PredicateObjectMap_1dcaddf0-ff40-4791-a363-802ee94deffc rr:objectMap km-dev:RefObjectMap_9f6758f9-804d-4bef-8951-fb49b9afcbfa .
+
+km-dev:TriplesMap_9ffadbc3-8c0c-458b-97e3-46bf854ce439 rr:predicateObjectMap km-dev:PredicateObjectMap_1dcaddf0-ff40-4791-a363-802ee94deffc .
+
+km-dev:PredicateObjectMap_1dcaddf0-ff40-4791-a363-802ee94deffc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1dcaddf0-ff40-4791-a363-802ee94deffc .
+
+km-dev:PredicateObjectMap_70788b43-d2d8-4474-9dc7-7b929e1408d6 rr:predicate schema:author .
+
+km-dev:RefObjectMap_e87c1653-55b5-443b-a3b9-b861478fbaf2 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_b99568e6-73b5-45c4-841c-04535495c53b ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap km-dev:RefObjectMap_e87c1653-55b5-443b-a3b9-b861478fbaf2 .
+
+km-dev:PredicateObjectMap_70788b43-d2d8-4474-9dc7-7b929e1408d6 rr:objectMap km-dev:RefObjectMap_e87c1653-55b5-443b-a3b9-b861478fbaf2 .
+
+km-dev:TriplesMap_9ffadbc3-8c0c-458b-97e3-46bf854ce439 rr:predicateObjectMap km-dev:PredicateObjectMap_70788b43-d2d8-4474-9dc7-7b929e1408d6 .
+
+km-dev:PredicateObjectMap_70788b43-d2d8-4474-9dc7-7b929e1408d6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_70788b43-d2d8-4474-9dc7-7b929e1408d6 .
+
+km-dev:PredicateObjectMap_b4345864-1a6e-421c-8281-41a8ab09675c rr:predicate schema:description .
+
+_:node1a4pncr4fx4 rr:column "description" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx4 .
+
+km-dev:PredicateObjectMap_b4345864-1a6e-421c-8281-41a8ab09675c rr:objectMap _:node1a4pncr4fx4 .
+
+km-dev:TriplesMap_9ffadbc3-8c0c-458b-97e3-46bf854ce439 rr:predicateObjectMap km-dev:PredicateObjectMap_b4345864-1a6e-421c-8281-41a8ab09675c .
+
+km-dev:PredicateObjectMap_b4345864-1a6e-421c-8281-41a8ab09675c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b4345864-1a6e-421c-8281-41a8ab09675c .
+
+km-dev:PredicateObjectMap_eaccdd3c-8a47-4c5a-ad28-b49b72113a1a rr:predicate schema:fileFormat .
+
+_:node1a4pncr4fx5 rr:column "bookFormatType" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx5 .
+
+km-dev:PredicateObjectMap_eaccdd3c-8a47-4c5a-ad28-b49b72113a1a rr:objectMap _:node1a4pncr4fx5 .
+
+km-dev:TriplesMap_9ffadbc3-8c0c-458b-97e3-46bf854ce439 rr:predicateObjectMap km-dev:PredicateObjectMap_eaccdd3c-8a47-4c5a-ad28-b49b72113a1a .
+
+km-dev:PredicateObjectMap_eaccdd3c-8a47-4c5a-ad28-b49b72113a1a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_eaccdd3c-8a47-4c5a-ad28-b49b72113a1a .
+
+km-dev:PredicateObjectMap_1e9e9b09-8f92-4ebc-9d4b-e0fc34a1e51a rr:predicate schema:genre .
+
+_:node1a4pncr4fx6 rr:column "genre" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx6 .
+
+km-dev:PredicateObjectMap_1e9e9b09-8f92-4ebc-9d4b-e0fc34a1e51a rr:objectMap _:node1a4pncr4fx6 .
+
+km-dev:TriplesMap_9ffadbc3-8c0c-458b-97e3-46bf854ce439 rr:predicateObjectMap km-dev:PredicateObjectMap_1e9e9b09-8f92-4ebc-9d4b-e0fc34a1e51a .
+
+km-dev:PredicateObjectMap_1e9e9b09-8f92-4ebc-9d4b-e0fc34a1e51a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1e9e9b09-8f92-4ebc-9d4b-e0fc34a1e51a .
+
+km-dev:PredicateObjectMap_6c93c49c-c8cc-4d40-a813-e462e2149d38 rr:predicate schema:image .
+
+_:node1a4pncr4fx7 rr:column "image" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx7 .
+
+km-dev:PredicateObjectMap_6c93c49c-c8cc-4d40-a813-e462e2149d38 rr:objectMap _:node1a4pncr4fx7 .
+
+km-dev:TriplesMap_9ffadbc3-8c0c-458b-97e3-46bf854ce439 rr:predicateObjectMap km-dev:PredicateObjectMap_6c93c49c-c8cc-4d40-a813-e462e2149d38 .
+
+km-dev:PredicateObjectMap_6c93c49c-c8cc-4d40-a813-e462e2149d38 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6c93c49c-c8cc-4d40-a813-e462e2149d38 .
+
+km-dev:PredicateObjectMap_e056f63f-84b4-42f3-aeca-0f24167fe91d rr:predicate schema:inLanguage .
+
+_:node1a4pncr4fx8 rr:column "language" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx8 .
+
+km-dev:PredicateObjectMap_e056f63f-84b4-42f3-aeca-0f24167fe91d rr:objectMap _:node1a4pncr4fx8 .
+
+km-dev:TriplesMap_9ffadbc3-8c0c-458b-97e3-46bf854ce439 rr:predicateObjectMap km-dev:PredicateObjectMap_e056f63f-84b4-42f3-aeca-0f24167fe91d .
+
+km-dev:PredicateObjectMap_e056f63f-84b4-42f3-aeca-0f24167fe91d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e056f63f-84b4-42f3-aeca-0f24167fe91d .
+
+km-dev:PredicateObjectMap_bafd628f-2393-4673-a97d-51d50d936805 rr:predicate schema:isbn .
+
+_:node1a4pncr4fx9 rr:column "ISBN" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx9 .
+
+km-dev:PredicateObjectMap_bafd628f-2393-4673-a97d-51d50d936805 rr:objectMap _:node1a4pncr4fx9 .
+
+km-dev:TriplesMap_9ffadbc3-8c0c-458b-97e3-46bf854ce439 rr:predicateObjectMap km-dev:PredicateObjectMap_bafd628f-2393-4673-a97d-51d50d936805 .
+
+km-dev:PredicateObjectMap_bafd628f-2393-4673-a97d-51d50d936805 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_bafd628f-2393-4673-a97d-51d50d936805 .
+
+km-dev:PredicateObjectMap_eca1edbb-efe0-4cd9-8533-0a74725c75df rr:predicate schema:linkamazonURL .
+
+_:node1a4pncr4fx10 rr:column "linkAmazon" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx10 .
+
+km-dev:PredicateObjectMap_eca1edbb-efe0-4cd9-8533-0a74725c75df rr:objectMap _:node1a4pncr4fx10 .
+
+km-dev:TriplesMap_9ffadbc3-8c0c-458b-97e3-46bf854ce439 rr:predicateObjectMap km-dev:PredicateObjectMap_eca1edbb-efe0-4cd9-8533-0a74725c75df .
+
+km-dev:PredicateObjectMap_eca1edbb-efe0-4cd9-8533-0a74725c75df a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_eca1edbb-efe0-4cd9-8533-0a74725c75df .
+
+km-dev:PredicateObjectMap_7e25545e-52ea-4abb-9ebc-ee929b06bcef rr:predicate schema:name .
+
+_:node1a4pncr4fx11 rr:column "title" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx11 .
+
+km-dev:PredicateObjectMap_7e25545e-52ea-4abb-9ebc-ee929b06bcef rr:objectMap _:node1a4pncr4fx11 .
+
+km-dev:TriplesMap_9ffadbc3-8c0c-458b-97e3-46bf854ce439 rr:predicateObjectMap km-dev:PredicateObjectMap_7e25545e-52ea-4abb-9ebc-ee929b06bcef .
+
+km-dev:PredicateObjectMap_7e25545e-52ea-4abb-9ebc-ee929b06bcef a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7e25545e-52ea-4abb-9ebc-ee929b06bcef .
+
+km-dev:PredicateObjectMap_42b6ef5c-3cb1-44ce-91ce-e53a88bb2071 rr:predicate schema:numberOfPages .
+
+_:node1a4pncr4fx12 rr:column "numberOfPages" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx12 .
+
+km-dev:PredicateObjectMap_42b6ef5c-3cb1-44ce-91ce-e53a88bb2071 rr:objectMap _:node1a4pncr4fx12 .
+
+km-dev:TriplesMap_9ffadbc3-8c0c-458b-97e3-46bf854ce439 rr:predicateObjectMap km-dev:PredicateObjectMap_42b6ef5c-3cb1-44ce-91ce-e53a88bb2071 .
+
+km-dev:PredicateObjectMap_42b6ef5c-3cb1-44ce-91ce-e53a88bb2071 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_42b6ef5c-3cb1-44ce-91ce-e53a88bb2071 .
+
+km-dev:PredicateObjectMap_c53a4666-4663-4648-8fd6-d68e9d97d7fc rr:predicate schema:ratingValue .
+
+_:node1a4pncr4fx13 rr:column "rate" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx13 .
+
+km-dev:PredicateObjectMap_c53a4666-4663-4648-8fd6-d68e9d97d7fc rr:objectMap _:node1a4pncr4fx13 .
+
+km-dev:TriplesMap_9ffadbc3-8c0c-458b-97e3-46bf854ce439 rr:predicateObjectMap km-dev:PredicateObjectMap_c53a4666-4663-4648-8fd6-d68e9d97d7fc .
+
+km-dev:PredicateObjectMap_c53a4666-4663-4648-8fd6-d68e9d97d7fc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c53a4666-4663-4648-8fd6-d68e9d97d7fc .
+
+km-dev:PredicateObjectMap_825e6044-adc1-4e47-82d4-f40419a8aeea rr:predicate schema:recommendImage .
+
+_:node1a4pncr4fx14 rr:column "recommendimg" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx14 .
+
+km-dev:PredicateObjectMap_825e6044-adc1-4e47-82d4-f40419a8aeea rr:objectMap _:node1a4pncr4fx14 .
+
+km-dev:TriplesMap_9ffadbc3-8c0c-458b-97e3-46bf854ce439 rr:predicateObjectMap km-dev:PredicateObjectMap_825e6044-adc1-4e47-82d4-f40419a8aeea .
+
+km-dev:PredicateObjectMap_825e6044-adc1-4e47-82d4-f40419a8aeea a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_825e6044-adc1-4e47-82d4-f40419a8aeea .
+
+km-dev:PredicateObjectMap_7b803ce9-1b2f-4fc4-9d50-9b1e7ca7d197 rr:predicate schema:recommendTitle .
+
+_:node1a4pncr4fx15 rr:column "recommendname" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx15 .
+
+km-dev:PredicateObjectMap_7b803ce9-1b2f-4fc4-9d50-9b1e7ca7d197 rr:objectMap _:node1a4pncr4fx15 .
+
+km-dev:TriplesMap_9ffadbc3-8c0c-458b-97e3-46bf854ce439 rr:predicateObjectMap km-dev:PredicateObjectMap_7b803ce9-1b2f-4fc4-9d50-9b1e7ca7d197 .
+
+km-dev:PredicateObjectMap_7b803ce9-1b2f-4fc4-9d50-9b1e7ca7d197 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7b803ce9-1b2f-4fc4-9d50-9b1e7ca7d197 .
+
+km-dev:PredicateObjectMap_86a1b799-79cd-446d-8fdb-a2972f341e28 rr:predicate schema:recommendURL .
+
+_:node1a4pncr4fx16 rr:column "recommend" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx16 .
+
+km-dev:PredicateObjectMap_86a1b799-79cd-446d-8fdb-a2972f341e28 rr:objectMap _:node1a4pncr4fx16 .
+
+km-dev:TriplesMap_9ffadbc3-8c0c-458b-97e3-46bf854ce439 rr:predicateObjectMap km-dev:PredicateObjectMap_86a1b799-79cd-446d-8fdb-a2972f341e28 .
+
+km-dev:PredicateObjectMap_86a1b799-79cd-446d-8fdb-a2972f341e28 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_86a1b799-79cd-446d-8fdb-a2972f341e28 .
+
+km-dev:PredicateObjectMap_5863a5c9-f448-4aa7-8fc3-b1876aa0102d rr:predicate schema:settings .
+
+_:node1a4pncr4fx17 rr:column "setting" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx17 .
+
+km-dev:PredicateObjectMap_5863a5c9-f448-4aa7-8fc3-b1876aa0102d rr:objectMap _:node1a4pncr4fx17 .
+
+km-dev:TriplesMap_9ffadbc3-8c0c-458b-97e3-46bf854ce439 rr:predicateObjectMap km-dev:PredicateObjectMap_5863a5c9-f448-4aa7-8fc3-b1876aa0102d .
+
+km-dev:PredicateObjectMap_5863a5c9-f448-4aa7-8fc3-b1876aa0102d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5863a5c9-f448-4aa7-8fc3-b1876aa0102d .
+
+km-dev:TriplesMap_5ef36996-b5b8-434c-aba4-cb3a7472570f a rr:TriplesMap .
+
+_:node1a4pncr4fx1 km-dev:hasTriplesMap km-dev:TriplesMap_5ef36996-b5b8-434c-aba4-cb3a7472570f .
+
+km-dev:TriplesMap_5ef36996-b5b8-434c-aba4-cb3a7472570f km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx18 rr:tableName "finallinkclean-sequence.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasLogicalTable _:node1a4pncr4fx18 .
+
+km-dev:TriplesMap_5ef36996-b5b8-434c-aba4-cb3a7472570f rr:logicalTable _:node1a4pncr4fx18 ;
+	rr:subjectMap _:node1a4pncr4fx19 .
+
+_:node1a4pncr4fx1 km-dev:hasSubjectMap _:node1a4pncr4fx19 .
+
+_:node1a4pncr4fx19 km-dev:isPartOfMapping _:node1a4pncr4fx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/Book2" ;
+	rr:class schema:Book ;
+	rr:template "{amazon-BookURL}" .
+
+km-dev:PredicateObjectMap_aa74e841-a672-45eb-aad1-237ea18d30c3 rr:predicate schema:authorName .
+
+_:node1a4pncr4fx20 rr:column "amazon-AuthorName" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx20 .
+
+km-dev:PredicateObjectMap_aa74e841-a672-45eb-aad1-237ea18d30c3 rr:objectMap _:node1a4pncr4fx20 .
+
+km-dev:TriplesMap_5ef36996-b5b8-434c-aba4-cb3a7472570f rr:predicateObjectMap km-dev:PredicateObjectMap_aa74e841-a672-45eb-aad1-237ea18d30c3 .
+
+km-dev:PredicateObjectMap_aa74e841-a672-45eb-aad1-237ea18d30c3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_aa74e841-a672-45eb-aad1-237ea18d30c3 .
+
+km-dev:PredicateObjectMap_5597ef4a-321c-49a5-9329-5c34f6e49824 rr:predicate schema:description .
+
+_:node1a4pncr4fx21 rr:column "amazon-Description" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx21 .
+
+km-dev:PredicateObjectMap_5597ef4a-321c-49a5-9329-5c34f6e49824 rr:objectMap _:node1a4pncr4fx21 .
+
+km-dev:TriplesMap_5ef36996-b5b8-434c-aba4-cb3a7472570f rr:predicateObjectMap km-dev:PredicateObjectMap_5597ef4a-321c-49a5-9329-5c34f6e49824 .
+
+km-dev:PredicateObjectMap_5597ef4a-321c-49a5-9329-5c34f6e49824 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5597ef4a-321c-49a5-9329-5c34f6e49824 .
+
+km-dev:PredicateObjectMap_7d685309-2c51-4c60-9171-ccbce808814b rr:predicate schema:image .
+
+_:node1a4pncr4fx22 rr:column "amazon-ImageURL" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx22 .
+
+km-dev:PredicateObjectMap_7d685309-2c51-4c60-9171-ccbce808814b rr:objectMap _:node1a4pncr4fx22 .
+
+km-dev:TriplesMap_5ef36996-b5b8-434c-aba4-cb3a7472570f rr:predicateObjectMap km-dev:PredicateObjectMap_7d685309-2c51-4c60-9171-ccbce808814b .
+
+km-dev:PredicateObjectMap_7d685309-2c51-4c60-9171-ccbce808814b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7d685309-2c51-4c60-9171-ccbce808814b .
+
+km-dev:PredicateObjectMap_9e3dcde3-b1f6-4504-8451-9145efd410dc rr:predicate schema:inLanguage .
+
+_:node1a4pncr4fx23 rr:column "amazon-Language" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx23 .
+
+km-dev:PredicateObjectMap_9e3dcde3-b1f6-4504-8451-9145efd410dc rr:objectMap _:node1a4pncr4fx23 .
+
+km-dev:TriplesMap_5ef36996-b5b8-434c-aba4-cb3a7472570f rr:predicateObjectMap km-dev:PredicateObjectMap_9e3dcde3-b1f6-4504-8451-9145efd410dc .
+
+km-dev:PredicateObjectMap_9e3dcde3-b1f6-4504-8451-9145efd410dc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9e3dcde3-b1f6-4504-8451-9145efd410dc .
+
+km-dev:PredicateObjectMap_f36eaa3c-b1d3-4bf8-9cfc-8187c0aadd6a rr:predicate schema:isbn .
+
+_:node1a4pncr4fx24 rr:column "amazon-ISBN-13" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx24 .
+
+km-dev:PredicateObjectMap_f36eaa3c-b1d3-4bf8-9cfc-8187c0aadd6a rr:objectMap _:node1a4pncr4fx24 .
+
+km-dev:TriplesMap_5ef36996-b5b8-434c-aba4-cb3a7472570f rr:predicateObjectMap km-dev:PredicateObjectMap_f36eaa3c-b1d3-4bf8-9cfc-8187c0aadd6a .
+
+km-dev:PredicateObjectMap_f36eaa3c-b1d3-4bf8-9cfc-8187c0aadd6a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f36eaa3c-b1d3-4bf8-9cfc-8187c0aadd6a .
+
+km-dev:PredicateObjectMap_2bf0adaf-9438-464b-bb82-e369727c9505 rr:predicate schema:name .
+
+_:node1a4pncr4fx25 rr:column "amazon-BookTitle" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx25 .
+
+km-dev:PredicateObjectMap_2bf0adaf-9438-464b-bb82-e369727c9505 rr:objectMap _:node1a4pncr4fx25 .
+
+km-dev:TriplesMap_5ef36996-b5b8-434c-aba4-cb3a7472570f rr:predicateObjectMap km-dev:PredicateObjectMap_2bf0adaf-9438-464b-bb82-e369727c9505 .
+
+km-dev:PredicateObjectMap_2bf0adaf-9438-464b-bb82-e369727c9505 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2bf0adaf-9438-464b-bb82-e369727c9505 .
+
+km-dev:PredicateObjectMap_b44818a1-c1db-4b07-b64d-a996348b1868 rr:predicate schema:numberOfPages .
+
+_:node1a4pncr4fx26 rr:column "amazon-Paperback" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx26 .
+
+km-dev:PredicateObjectMap_b44818a1-c1db-4b07-b64d-a996348b1868 rr:objectMap _:node1a4pncr4fx26 .
+
+km-dev:TriplesMap_5ef36996-b5b8-434c-aba4-cb3a7472570f rr:predicateObjectMap km-dev:PredicateObjectMap_b44818a1-c1db-4b07-b64d-a996348b1868 .
+
+km-dev:PredicateObjectMap_b44818a1-c1db-4b07-b64d-a996348b1868 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b44818a1-c1db-4b07-b64d-a996348b1868 .
+
+km-dev:PredicateObjectMap_502fa65c-e9af-410d-bd69-e66f65ab3839 rr:predicate schema:publisherandedition .
+
+_:node1a4pncr4fx27 rr:column "amazon-Publisher" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx27 .
+
+km-dev:PredicateObjectMap_502fa65c-e9af-410d-bd69-e66f65ab3839 rr:objectMap _:node1a4pncr4fx27 .
+
+km-dev:TriplesMap_5ef36996-b5b8-434c-aba4-cb3a7472570f rr:predicateObjectMap km-dev:PredicateObjectMap_502fa65c-e9af-410d-bd69-e66f65ab3839 .
+
+km-dev:PredicateObjectMap_502fa65c-e9af-410d-bd69-e66f65ab3839 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_502fa65c-e9af-410d-bd69-e66f65ab3839 .
+
+km-dev:PredicateObjectMap_4d5c6d9a-9b78-4f6b-a527-26232aa7f97b rr:predicate schema:recommendAuthor .
+
+_:node1a4pncr4fx28 rr:column "amazon-recommend-authorName" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx28 .
+
+km-dev:PredicateObjectMap_4d5c6d9a-9b78-4f6b-a527-26232aa7f97b rr:objectMap _:node1a4pncr4fx28 .
+
+km-dev:TriplesMap_5ef36996-b5b8-434c-aba4-cb3a7472570f rr:predicateObjectMap km-dev:PredicateObjectMap_4d5c6d9a-9b78-4f6b-a527-26232aa7f97b .
+
+km-dev:PredicateObjectMap_4d5c6d9a-9b78-4f6b-a527-26232aa7f97b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4d5c6d9a-9b78-4f6b-a527-26232aa7f97b .
+
+km-dev:PredicateObjectMap_cea2ea34-6a9d-460a-ba3e-5a76870e7014 rr:predicate schema:recommendImage .
+
+_:node1a4pncr4fx29 rr:column "amazon-recommend-coverImage" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx29 .
+
+km-dev:PredicateObjectMap_cea2ea34-6a9d-460a-ba3e-5a76870e7014 rr:objectMap _:node1a4pncr4fx29 .
+
+km-dev:TriplesMap_5ef36996-b5b8-434c-aba4-cb3a7472570f rr:predicateObjectMap km-dev:PredicateObjectMap_cea2ea34-6a9d-460a-ba3e-5a76870e7014 .
+
+km-dev:PredicateObjectMap_cea2ea34-6a9d-460a-ba3e-5a76870e7014 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_cea2ea34-6a9d-460a-ba3e-5a76870e7014 .
+
+km-dev:PredicateObjectMap_ccb6bd69-7c63-4977-899d-83b970021c53 rr:predicate schema:recommendTitle .
+
+_:node1a4pncr4fx30 rr:column "amazon-recommend-title" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx30 .
+
+km-dev:PredicateObjectMap_ccb6bd69-7c63-4977-899d-83b970021c53 rr:objectMap _:node1a4pncr4fx30 .
+
+km-dev:TriplesMap_5ef36996-b5b8-434c-aba4-cb3a7472570f rr:predicateObjectMap km-dev:PredicateObjectMap_ccb6bd69-7c63-4977-899d-83b970021c53 .
+
+km-dev:PredicateObjectMap_ccb6bd69-7c63-4977-899d-83b970021c53 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ccb6bd69-7c63-4977-899d-83b970021c53 .
+
+km-dev:PredicateObjectMap_8b0d6a30-6b40-4ab3-ba3b-29858ddb6e56 rr:predicate schema:recommendURL .
+
+_:node1a4pncr4fx31 rr:column "amazon-recommend-URL" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx31 .
+
+km-dev:PredicateObjectMap_8b0d6a30-6b40-4ab3-ba3b-29858ddb6e56 rr:objectMap _:node1a4pncr4fx31 .
+
+km-dev:TriplesMap_5ef36996-b5b8-434c-aba4-cb3a7472570f rr:predicateObjectMap km-dev:PredicateObjectMap_8b0d6a30-6b40-4ab3-ba3b-29858ddb6e56 .
+
+km-dev:PredicateObjectMap_8b0d6a30-6b40-4ab3-ba3b-29858ddb6e56 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8b0d6a30-6b40-4ab3-ba3b-29858ddb6e56 .
+
+km-dev:TriplesMap_b99568e6-73b5-45c4-841c-04535495c53b a rr:TriplesMap .
+
+_:node1a4pncr4fx1 km-dev:hasTriplesMap km-dev:TriplesMap_b99568e6-73b5-45c4-841c-04535495c53b .
+
+km-dev:TriplesMap_b99568e6-73b5-45c4-841c-04535495c53b km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx32 rr:tableName "finallinkclean-sequence.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasLogicalTable _:node1a4pncr4fx32 .
+
+km-dev:TriplesMap_b99568e6-73b5-45c4-841c-04535495c53b rr:logicalTable _:node1a4pncr4fx32 ;
+	rr:subjectMap _:node1a4pncr4fx33 .
+
+_:node1a4pncr4fx1 km-dev:hasSubjectMap _:node1a4pncr4fx33 .
+
+_:node1a4pncr4fx33 km-dev:isPartOfMapping _:node1a4pncr4fx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/Person1" ;
+	rr:class schema:Person ;
+	rr:template "{authorlink}" .
+
+km-dev:PredicateObjectMap_96e47a3a-45c9-40dd-ba3d-532bcede24fd rr:predicate schema:authorsBooks .
+
+_:node1a4pncr4fx34 rr:column "grauthor-books" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx34 .
+
+km-dev:PredicateObjectMap_96e47a3a-45c9-40dd-ba3d-532bcede24fd rr:objectMap _:node1a4pncr4fx34 .
+
+km-dev:TriplesMap_b99568e6-73b5-45c4-841c-04535495c53b rr:predicateObjectMap km-dev:PredicateObjectMap_96e47a3a-45c9-40dd-ba3d-532bcede24fd .
+
+km-dev:PredicateObjectMap_96e47a3a-45c9-40dd-ba3d-532bcede24fd a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_96e47a3a-45c9-40dd-ba3d-532bcede24fd .
+
+km-dev:PredicateObjectMap_905410bd-dac3-4b26-893b-8c237329c477 rr:predicate schema:birthDate .
+
+_:node1a4pncr4fx35 rr:column "grauthor-birthday" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx35 .
+
+km-dev:PredicateObjectMap_905410bd-dac3-4b26-893b-8c237329c477 rr:objectMap _:node1a4pncr4fx35 .
+
+km-dev:TriplesMap_b99568e6-73b5-45c4-841c-04535495c53b rr:predicateObjectMap km-dev:PredicateObjectMap_905410bd-dac3-4b26-893b-8c237329c477 .
+
+km-dev:PredicateObjectMap_905410bd-dac3-4b26-893b-8c237329c477 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_905410bd-dac3-4b26-893b-8c237329c477 .
+
+km-dev:PredicateObjectMap_61998fbe-0f6c-4450-9eea-8b98c61809f1 rr:predicate schema:dbpediaURI .
+
+_:node1a4pncr4fx36 rr:column "author-URI" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx36 .
+
+km-dev:PredicateObjectMap_61998fbe-0f6c-4450-9eea-8b98c61809f1 rr:objectMap _:node1a4pncr4fx36 .
+
+km-dev:TriplesMap_b99568e6-73b5-45c4-841c-04535495c53b rr:predicateObjectMap km-dev:PredicateObjectMap_61998fbe-0f6c-4450-9eea-8b98c61809f1 .
+
+km-dev:PredicateObjectMap_61998fbe-0f6c-4450-9eea-8b98c61809f1 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_61998fbe-0f6c-4450-9eea-8b98c61809f1 .
+
+km-dev:PredicateObjectMap_32f9d001-2bdf-4893-94d6-850296a79498 rr:predicate schema:gender .
+
+_:node1a4pncr4fx37 rr:column "grauthor-gender" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx37 .
+
+km-dev:PredicateObjectMap_32f9d001-2bdf-4893-94d6-850296a79498 rr:objectMap _:node1a4pncr4fx37 .
+
+km-dev:TriplesMap_b99568e6-73b5-45c4-841c-04535495c53b rr:predicateObjectMap km-dev:PredicateObjectMap_32f9d001-2bdf-4893-94d6-850296a79498 .
+
+km-dev:PredicateObjectMap_32f9d001-2bdf-4893-94d6-850296a79498 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_32f9d001-2bdf-4893-94d6-850296a79498 .
+
+km-dev:PredicateObjectMap_87d9ab9d-c039-4dde-a954-62ae489cd94e rr:predicate schema:genre .
+
+_:node1a4pncr4fx38 rr:column "grauthor-genre" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx38 .
+
+km-dev:PredicateObjectMap_87d9ab9d-c039-4dde-a954-62ae489cd94e rr:objectMap _:node1a4pncr4fx38 .
+
+km-dev:TriplesMap_b99568e6-73b5-45c4-841c-04535495c53b rr:predicateObjectMap km-dev:PredicateObjectMap_87d9ab9d-c039-4dde-a954-62ae489cd94e .
+
+km-dev:PredicateObjectMap_87d9ab9d-c039-4dde-a954-62ae489cd94e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_87d9ab9d-c039-4dde-a954-62ae489cd94e .
+
+km-dev:PredicateObjectMap_ebf9941f-ec37-4877-92ba-ffb88f76da98 rr:predicate schema:genre .
+
+_:node1a4pncr4fx39 rr:column "[\"author-genre\",\"values\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx39 .
+
+km-dev:PredicateObjectMap_ebf9941f-ec37-4877-92ba-ffb88f76da98 rr:objectMap _:node1a4pncr4fx39 .
+
+km-dev:TriplesMap_b99568e6-73b5-45c4-841c-04535495c53b rr:predicateObjectMap km-dev:PredicateObjectMap_ebf9941f-ec37-4877-92ba-ffb88f76da98 .
+
+km-dev:PredicateObjectMap_ebf9941f-ec37-4877-92ba-ffb88f76da98 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ebf9941f-ec37-4877-92ba-ffb88f76da98 .
+
+km-dev:PredicateObjectMap_ab992d25-6a02-477b-b97f-07cb3c7fd0c6 rr:predicate schema:image .
+
+_:node1a4pncr4fx40 rr:column "grauthor-image" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx40 .
+
+km-dev:PredicateObjectMap_ab992d25-6a02-477b-b97f-07cb3c7fd0c6 rr:objectMap _:node1a4pncr4fx40 .
+
+km-dev:TriplesMap_b99568e6-73b5-45c4-841c-04535495c53b rr:predicateObjectMap km-dev:PredicateObjectMap_ab992d25-6a02-477b-b97f-07cb3c7fd0c6 .
+
+km-dev:PredicateObjectMap_ab992d25-6a02-477b-b97f-07cb3c7fd0c6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ab992d25-6a02-477b-b97f-07cb3c7fd0c6 .
+
+km-dev:PredicateObjectMap_72cbaedb-cca8-4059-bf74-8c568524ce85 rr:predicate schema:influenced .
+
+_:node1a4pncr4fx41 rr:column "[\"author-influenced\",\"values\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx41 .
+
+km-dev:PredicateObjectMap_72cbaedb-cca8-4059-bf74-8c568524ce85 rr:objectMap _:node1a4pncr4fx41 .
+
+km-dev:TriplesMap_b99568e6-73b5-45c4-841c-04535495c53b rr:predicateObjectMap km-dev:PredicateObjectMap_72cbaedb-cca8-4059-bf74-8c568524ce85 .
+
+km-dev:PredicateObjectMap_72cbaedb-cca8-4059-bf74-8c568524ce85 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_72cbaedb-cca8-4059-bf74-8c568524ce85 .
+
+km-dev:PredicateObjectMap_15c221f3-f727-4fb9-9fd9-ab4f1f13f290 rr:predicate schema:influencedBy .
+
+_:node1a4pncr4fx42 rr:column "[\"author-influencedBy\",\"values\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx42 .
+
+km-dev:PredicateObjectMap_15c221f3-f727-4fb9-9fd9-ab4f1f13f290 rr:objectMap _:node1a4pncr4fx42 .
+
+km-dev:TriplesMap_b99568e6-73b5-45c4-841c-04535495c53b rr:predicateObjectMap km-dev:PredicateObjectMap_15c221f3-f727-4fb9-9fd9-ab4f1f13f290 .
+
+km-dev:PredicateObjectMap_15c221f3-f727-4fb9-9fd9-ab4f1f13f290 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_15c221f3-f727-4fb9-9fd9-ab4f1f13f290 .
+
+km-dev:PredicateObjectMap_7929c765-27ce-4a01-9862-5d1a7f5645b7 rr:predicate schema:name .
+
+_:node1a4pncr4fx43 rr:column "author" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx43 .
+
+km-dev:PredicateObjectMap_7929c765-27ce-4a01-9862-5d1a7f5645b7 rr:objectMap _:node1a4pncr4fx43 .
+
+km-dev:TriplesMap_b99568e6-73b5-45c4-841c-04535495c53b rr:predicateObjectMap km-dev:PredicateObjectMap_7929c765-27ce-4a01-9862-5d1a7f5645b7 .
+
+km-dev:PredicateObjectMap_7929c765-27ce-4a01-9862-5d1a7f5645b7 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7929c765-27ce-4a01-9862-5d1a7f5645b7 .
+
+km-dev:PredicateObjectMap_bce95333-6bfd-4e4f-a81c-60bf7b185f20 rr:predicate schema:nationalities .
+
+_:node1a4pncr4fx44 rr:column "grauthor-borncountry" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasObjectMap _:node1a4pncr4fx44 .
+
+km-dev:PredicateObjectMap_bce95333-6bfd-4e4f-a81c-60bf7b185f20 rr:objectMap _:node1a4pncr4fx44 .
+
+km-dev:TriplesMap_b99568e6-73b5-45c4-841c-04535495c53b rr:predicateObjectMap km-dev:PredicateObjectMap_bce95333-6bfd-4e4f-a81c-60bf7b185f20 .
+
+km-dev:PredicateObjectMap_bce95333-6bfd-4e4f-a81c-60bf7b185f20 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a4pncr4fx1 .
+
+_:node1a4pncr4fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_bce95333-6bfd-4e4f-a81c-60bf7b185f20 .
