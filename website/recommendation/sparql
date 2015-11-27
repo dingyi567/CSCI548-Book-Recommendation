@@ -1,0 +1,175 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX db: <http://dbpedia.org/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX re: <http://www.w3.org/2000/10/swap/reason#>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix : <http://dbpedia.org/ontology/>
+prefix res: <http://dbpedia.org/resource/>
+prefix schema: <http://schema.org/>
+SELECT  distinct ?x ?authorURI ?amazonBookLink ?description ?imageURL ?bookTitle ?authorName ?numberOfPages ?language ?publisher ?isbn ?authorGenre ?authorDescription ?authorNationalities ?authorBirthDate ?authorGender ?authorImage
+WHERE {
+?x a schema:Book.
+filter(?x=<http://www.goodreads.com/book/show/61181.The_Ringworld_Engineers>).
+OPTIONAL{?x schema:image ?imageURL.}
+?x schema:name ?bookTitle.
+
+OPTIONAL{?x schema:amazonlinks/schema:numberOfPages ?numberOfPages.}
+OPTIONAL{?x schema:amazonlinks/schema:inLanguage ?language.}
+OPTIONAL{?x schema:amazonlinks/schema:publisherandedition ?publisher.}
+OPTIONAL{?x schema:amazonlinks/schema:isbn ?isbn.}
+OPTIONAL{?x schema:amazonlinks/schema:uri ?amazonBookLink.}
+OPTIONAL{?x schema:amazonlinks/schema:description ?description.}
+
+?x schema:author ?authorURI.
+OPTIONAL{?x schema:author/schema:name ?authorName.}
+OPTIONAL{?x schema:author/schema:genre ?authorGenre.}
+OPTIONAL{?x schema:author/schema:description ?authorDescription.}
+OPTIONAL{?x schema:author/schema:nationalities ?authorNationalities.}
+OPTIONAL{?x schema:author/schema:birthDate ?authorBirthDate.}
+OPTIONAL{?x schema:author/schema:gender ?authorGender.}
+OPTIONAL{?x schema:author/schema:image ?authorImage.}
+
+
+}
+
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX db: <http://dbpedia.org/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX re: <http://www.w3.org/2000/10/swap/reason#>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix : <http://dbpedia.org/ontology/>
+prefix res: <http://dbpedia.org/resource/>
+prefix schema: <http://schema.org/>
+SELECT  distinct ?x ?authorGenre ?authorDescription ?authorNationalities ?authorBirthDate ?authorGender ?authorImage ?authorsBooks ?authorInfluenced ?authorInfluencedBy
+WHERE {
+?x a schema:Person.
+filter(?x=<http://www.goodreads.com/author/show/6620.Greg_Cox>).
+
+OPTIONAL{?x schema:genre ?authorGenre.}
+OPTIONAL{?x schema:description ?authorDescription.}
+OPTIONAL{?x schema:nationalities ?authorNationalities.}
+OPTIONAL{?x schema:birthDate ?authorBirthDate.}
+OPTIONAL{?x schema:gender ?authorGender.}
+OPTIONAL{?x schema:image ?authorImage.}
+OPTIONAL{?x schema:authorsBooks ?authorsBooks.}
+OPTIONAL{?x schema:influenced ?authorInfluenced.}
+OPTIONAL{?x schema:influencedBy ?authorInfluencedBy.}
+}
+
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX db: <http://dbpedia.org/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX re: <http://www.w3.org/2000/10/swap/reason#>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix : <http://dbpedia.org/ontology/>
+prefix res: <http://dbpedia.org/resource/>
+prefix schema: <http://schema.org/>
+SELECT  distinct ?x ?bookTitle ?imageURL
+WHERE {
+
+{ 
+        ?x a schema:Book.
+        filter(?x=<https://www.goodreads.com/book/show/33024.Underworld>)
+
+        ?x schema:name ?bookTitle.
+        OPTIONAL{?x schema:image ?imageURL.}
+}
+union
+{
+        ?x a schema:Book.
+        filter(?x=<https://www.goodreads.com/book/show/13536475-the-dark-knight-rises>)
+
+        ?x schema:name ?bookTitle.
+        OPTIONAL{?x schema:image ?imageURL.}
+
+}
+
+
+}
+
+
+
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX db: <http://dbpedia.org/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX re: <http://www.w3.org/2000/10/swap/reason#>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix : <http://dbpedia.org/ontology/>
+prefix res: <http://dbpedia.org/resource/>
+prefix schema: <http://schema.org/>
+SELECT  distinct ?x ?authorName ?authorImage ?authorDbpediaURI
+WHERE {
+        { 
+            ?x schema:name ?authorName.
+            ?x schema:image ?authorImage.
+            ?x schema:dbpediaURI ?authorDbpediaURI.
+            filter(?authorDbpediaURI="http://dbpedia.org/resource/M._John_Harrison").
+        }
+        union
+                { 
+            ?x schema:name ?authorName.
+            ?x schema:image ?authorImage.
+            ?x schema:dbpediaURI ?authorDbpediaURI.
+            filter(?authorDbpediaURI="http://dbpedia.org/resource/Robert_A._Heinlein").
+        }
+        union
+                { 
+            ?x schema:name ?authorName.
+            ?x schema:image ?authorImage.
+            ?x schema:dbpediaURI ?authorDbpediaURI.
+            filter(?authorDbpediaURI="http://dbpedia.org/resource/Arthur_C._Clarke").
+        }
+        union
+                { 
+            ?x schema:name ?authorName.
+            ?x schema:image ?authorImage.
+            ?x schema:dbpediaURI ?authorDbpediaURI.
+            filter(?authorDbpediaURI="http://dbpedia.org/resource/Dan_Simmons").
+        }
+        union
+                { 
+            ?x schema:name ?authorName.
+            ?x schema:image ?authorImage.
+            ?x schema:dbpediaURI ?authorDbpediaURI.
+            filter(?authorDbpediaURI="http://dbpedia.org/resource/Isaac_Asimov").
+        }
+        union
+                { 
+            ?x schema:name ?authorName.
+            ?x schema:image ?authorImage.
+            ?x schema:dbpediaURI ?authorDbpediaURI.
+            filter(?authorDbpediaURI="http://dbpedia.org/resource/Brian_Aldiss").
+        }
+
+
+}
+
+
+
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX db: <http://dbpedia.org/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX re: <http://www.w3.org/2000/10/swap/reason#>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix : <http://dbpedia.org/ontology/>
+prefix res: <http://dbpedia.org/resource/>
+prefix schema: <http://schema.org/>
+SELECT  distinct ?x ?amazonBookLink ?recommendImage ?recommendAuthor ?recommendTitle ?recommendURL
+WHERE {
+?x a schema:Book.
+?x schema:amazonlinks ?amazonBookLink.
+filter(?amazonBookLink=<http://www.amazon.com/Brother-Odd-Thomas-Dean-Koontz/dp/0553804804>).
+OPTIONAL{?x schema:amazonlinks/schema:recommendImage ?recommendImage.}
+OPTIONAL{?x schema:amazonlinks/schema:recommendAuthor ?recommendAuthor.}
+OPTIONAL{?x schema:amazonlinks/schema:recommendTitle ?recommendTitle.}
+OPTIONAL{?x schema:amazonlinks/schema:recommendURL ?recommendURL.}
+}  

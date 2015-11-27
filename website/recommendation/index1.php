@@ -92,26 +92,54 @@
                 <div id='resultsArea'>
                     <?php if(isset($_POST["indexSearch"])):?>
                         <?php  
-                            echo "<h3>Search Result:</h3><br>";
-                            $keyword  = $_POST["search"]; 
-                            //run query here
-                            $rowcount = 7;
-                            
-                            $bookId = 1;
-                            $imageURL = "http://ecx.images-amazon.com/images/I/51ag2-oxh6L._SY344_BO1,204,203,200_QL70_.jpg";
-                            $bookTitle = "Hunters in the Dark (HALO)";
-                            $bookURL = "http://www.amazon.com/Hunters-Dark-HALO-Peter-David/dp/1476795851";
-                            $authorName = "Peter David";
-                            $authorLink = "www.amazon.com/Peter-David/e/B000APYOHU";
-                            $paperBack = "368 pages";
-                            $language = "English";
-                            $publisher = "Gallery Books (June 16, 2015)";
-                            $ISBN_10 =" 1476795851";
-                            $ISBN_13 =" 978-1476795850";
-    
-                            
+                        echo "<h3>Search Result:</h3><br>";
+                        $keyword  = $_POST["search"]; 
+                        //echo "keyword---".$keyword;            
+                        //query database
+                        require_once "/Applications/MAMP/htdocs/recommendation/phpSesame/phpSesame.php";
+                        $sesame = array('url' => 'http://localhost:8080/openrdf-sesame', 'repository' => '1');     
+                        $store = new phpSesame($sesame['url'], $sesame['repository']);
+                        $sparql =  "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                                    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                                    PREFIX dbp: <http://dbpedia.org/property/>
+                                    PREFIX db: <http://dbpedia.org/>
+                                    PREFIX dbr: <http://dbpedia.org/resource/>
+                                    PREFIX re: <http://www.w3.org/2000/10/swap/reason#>
+                                    prefix foaf: <http://xmlns.com/foaf/0.1/>
+                                    prefix : <http://dbpedia.org/ontology/>
+                                    prefix res: <http://dbpedia.org/resource/>
+                                    prefix schema: <http://schema.org/>
 
-                            for($i=0; $i<$rowcount; $i++){
+                                    SELECT  distinct ?x ?name ?image ?isbn ?authorName ?publisher ?language
+                                    WHERE {
+                                    ?x a schema:Book.
+                                    ?x schema:image ?image.
+                                    ?x schema:isbn ?isbn.
+                                    ?x schema:inLanguage ?language.
+                                    ?x schema:author/schema:name ?authorName.
+                                    ?x schema:amazonlinks/schema:publisherandedition ?publisher.
+                                    ?x schema:name ?name.FILTER regex(?name, \"$keyword\").}
+                                    limit 15";
+                                    
+                                    //echo $sparql;
+
+                        $resultFormat = phpSesame::SPARQL_XML; // The expected return type, will return a phpSesame_SparqlRes object (Optional)
+                        $lang = "sparql"; // Can also choose SeRQL (Optional)
+                        $infer = true; // Can also choose to explicitly disallow inference. (Optional)
+                        $result = $store->query($sparql, $resultFormat, $lang, $infer);
+
+                        if($result->hasRows()) {
+                                foreach($result->getRows() as $row) {
+                                        $bookURI = $row['x'];
+                                    //echo $bookURI;
+                                        $imageURL = $row['image'];
+                                        $bookTitle = $row['name'];
+                                        $isbn = $row['isbn'];                
+                                        $authorName = $row['authorName'];
+                                        $language = $row['language'];
+                                        $publisher = $row['publisher'];
+
+                                //need "imageURL", "isbn", "booktitle", "authorName", "publisher", "language"
                                //media object, image
                                        echo "<div class= 'media'><div class='row'><div class='col-xs-3 col-sm-3 col-md-2 pull-left '>
                                        <img class='media-object img-responsive mediaImg img-thumbnail' src=$imageURL alt='media object'>                                            </img></div>";
@@ -119,7 +147,7 @@
                                 //media body
                                        //media heading
                                        echo "<div class='media-body'><div class='col-xs-9 col-sm-9 col-md-10'> <div class='row'>
-                                       <a class='media-heading text-left' href='bookDetails.php?bookId=$bookId'><h3>$bookTitle</h3></a>
+                                       <a class='media-heading text-left' href='bookDetails.php?bookURI=$bookURI'><h3>$bookTitle</h3></a>
                                        </div>" ;
 
                                        echo "<div class='row'>";
@@ -137,11 +165,15 @@
 
                                        echo "</div></div></div>"; 
                                        echo "</div></div>"; 
-                                
+
                                        echo "<hr>";
-                                       
-                                       $bookId +=1;
-                            }
+
+                                    
+                                }
+                        }
+                        else{
+                            echo "no results";
+                        }
 
                         ?>
                    <?php endif; ?>

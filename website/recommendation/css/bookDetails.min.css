@@ -29,6 +29,10 @@ body {
     top: 10px;
 }
 
+.Recommend_From_Amazon_Container ul{
+    display: inline;
+}
+
 a.small-link{
     font-size:12px;
 }
