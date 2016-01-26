@@ -23,15 +23,25 @@ Go to dig-entity-merger file, use ls command to see if make-spark.sh is inside, 
 	./make-spark.sh
 ```
 
+Then go to find the file merger.zip, write down the absolute path of merger.zip. For example, …… /dig-entity-merger/digEntityMerger/merger.zip
+
+```
+	cd digEntityMerger
+	ls
+```
+  
+
 ## Install Karma
 
 Karma is written in JAVA and will run on Mac, Linux and Windows. To Install Web Karma, you will need Java 1.7 and Maven 3.0.
 
 Java 1.7
+
 Download from http://www.oracle.com/technetwork/java/javase/downloads/index.html
 Make sure JAVA_HOME environment variable is pointing to JDK 1.7
 
 Maven 3.0
+
 Make sure that M2_HOME and M2 environment variables are set as described in Maven Installation Instructions: http://maven.apache.org/download.cgi
 
 When system requirements are satisfied, run the following commands:
@@ -63,16 +73,6 @@ Go to find the karma-spark-0.0.1-SNAPSHOT-shaded.jar file and write down the abs
 …… /Web-Karma/karma-spark/target/karma-spark-0.0.1-SNAPSHOT-shaded.jar
 
 
-## Find merger.zip
-
-Go to the file where you put dig-entity-merger, and find the file merger.zip, write down the absolute path of merger.zip. For example, …… /dig-entity-merger/digEntityMerger/merger.zip
-
-```
-	cd dig-entity-merger
-	cd digEntityMerger
-	ls
-```
-  
   
 ## Install Spark
 
