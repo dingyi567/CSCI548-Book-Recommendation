@@ -35,18 +35,20 @@ Maven 3.0
 Make sure that M2_HOME and M2 environment variables are set as described in Maven Installation Instructions: http://maven.apache.org/download.cgi
 	 When system requirements are satisfied, run the following commands:
 
-	  ```
+```
 	cd Web-Karma
 	git checkout pyspark-compatiblity
 	mvn clean install –DskipTests
 ```
 
+
 “BUILD SUCCESS” indicates build successfully. Then type:
+
 
 ```
 	cd karma-spark
 	mvn install –Pshaded
-````
+```
 
 “BUILD SUCCESS” indicates build successfully. Then type:
 
@@ -55,21 +57,23 @@ Make sure that M2_HOME and M2 environment variables are set as described in Mave
 	ls
 ```
 
+
 Go to find the karma-spark-0.0.1-SNAPSHOT-shaded.jar file and write down the absolute path of this file. For example,
 …… /Web-Karma/karma-spark/target/karma-spark-0.0.1-SNAPSHOT-shaded.jar
 
+
 ## Go to the file where you put dig-entity-merger, and find the file merger.zip, write down the absolute path of merger.zip. For example, …… /dig-entity-merger/digEntityMerger/merger.zip
 
-  ```
+```
 	cd dig-entity-merger
 	cd digEntityMerger
 	ls
-  	```
-  	
+```
+  
+  
 ## Install Spark
 
-Go to the website to download Spark, choose  Spark release: 1.3.0(Mar 13 2015); package type: Pre-built for Hadoop 2.4 and later; download type: direct Download.
-  [https://spark.apache.org/releases/spark-release-1-3-0.html]
+Go to the website to download Spark, choose  Spark release: 1.3.0(Mar 13 2015); package type: Pre-built for Hadoop 2.4 and later; download type: direct Download.[https://spark.apache.org/releases/spark-release-1-3-0.html]
   
 When you download spark-1.3.0-bin-hadoop2.4.tgz, type these commands to unzip this file and edit system PATH variable:
 
@@ -95,12 +99,15 @@ You will see “Spark assembly has been built with Hive, including Datanucleus j
 
 Go to the file where you put dig-workflows, then go to the file pySpark-workflows. You will find the file adsWorkflow.py.
 
+
 ```
 	cd dig-workflows
 	cd pySpark-workflows
 ```
 
+
 On the command prompt, type:
+
 
 ```
  rm -rf karma-out; spark-submit \
@@ -112,8 +119,8 @@ On the command prompt, type:
        adsWorkflow.py \
        part-00002 text 1 \
        ads-hair-eye-sample text 1 \
-karma-out
-	```
+       karma-out
+```
 
 You need to substitute the path to merger.zip and path to karma-spark-0.0.1-SNAPSHOT-shaded.jar with the paths you just wrote down. Meanwhile, “part-00002” and “ads-hair-eye-sample” are 2 input files and “karma-out” is the output file name.
 After the command is typed and ran successfully, you can see the results in the file karma-out.
