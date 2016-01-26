@@ -33,7 +33,8 @@ Make sure JAVA_HOME environment variable is pointing to JDK 1.7
 
 Maven 3.0
 Make sure that M2_HOME and M2 environment variables are set as described in Maven Installation Instructions: http://maven.apache.org/download.cgi
-	 When system requirements are satisfied, run the following commands:
+
+When system requirements are satisfied, run the following commands:
 
 ```
 	cd Web-Karma
@@ -62,7 +63,9 @@ Go to find the karma-spark-0.0.1-SNAPSHOT-shaded.jar file and write down the abs
 …… /Web-Karma/karma-spark/target/karma-spark-0.0.1-SNAPSHOT-shaded.jar
 
 
-## Go to the file where you put dig-entity-merger, and find the file merger.zip, write down the absolute path of merger.zip. For example, …… /dig-entity-merger/digEntityMerger/merger.zip
+## Find merger.zip
+
+Go to the file where you put dig-entity-merger, and find the file merger.zip, write down the absolute path of merger.zip. For example, …… /dig-entity-merger/digEntityMerger/merger.zip
 
 ```
 	cd dig-entity-merger
@@ -73,7 +76,7 @@ Go to find the karma-spark-0.0.1-SNAPSHOT-shaded.jar file and write down the abs
   
 ## Install Spark
 
-Go to the website to download Spark, choose  Spark release: 1.3.0(Mar 13 2015); package type: Pre-built for Hadoop 2.4 and later; download type: direct Download.[https://spark.apache.org/releases/spark-release-1-3-0.html]
+Go to the website to download Spark, choose  Spark release: 1.3.0(Mar 13 2015); package type: Pre-built for Hadoop 2.4 and later; download type: direct Download.https://spark.apache.org/releases/spark-release-1-3-0.html
   
 When you download spark-1.3.0-bin-hadoop2.4.tgz, type these commands to unzip this file and edit system PATH variable:
 
@@ -88,12 +91,16 @@ After typing pwd command, you will get the current path and add this path to PAT
 
 ```
 	export PATH=…… /spark-1.3.0-bin-hadoop2.4/bin:$PATH
-On the command prompt, type:
+```
+
+
+On the command prompt, type the following commands, you will see “Spark assembly has been built with Hive, including Datanucleus jars on classpath”.
+
+```
 	cd ..
 	spark-submit
 ```
 
-You will see “Spark assembly has been built with Hive, including Datanucleus jars on classpath”.
 
 ## Test with an example
 
@@ -106,7 +113,8 @@ Go to the file where you put dig-workflows, then go to the file pySpark-workflow
 ```
 
 
-On the command prompt, type:
+On the command prompt, type the command below. You need to substitute the path to merger.zip and path to karma-spark-0.0.1-SNAPSHOT-shaded.jar with the paths you just wrote down. Meanwhile, “part-00002” and “ads-hair-eye-sample” are 2 input files and “karma-out” is the output file name.
+After the command is typed and ran successfully, you can see the results in the file karma-out.
 
 
 ```
@@ -122,8 +130,7 @@ On the command prompt, type:
        karma-out
 ```
 
-You need to substitute the path to merger.zip and path to karma-spark-0.0.1-SNAPSHOT-shaded.jar with the paths you just wrote down. Meanwhile, “part-00002” and “ads-hair-eye-sample” are 2 input files and “karma-out” is the output file name.
-After the command is typed and ran successfully, you can see the results in the file karma-out.
+
 
 
 
