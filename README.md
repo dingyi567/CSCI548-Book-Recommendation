@@ -1,5 +1,3 @@
-
-
 # Spark Installation Guide
 
 
@@ -113,8 +111,7 @@ Go to the file where you put dig-workflows, then go to the file pySpark-workflow
 ```
 
 
-On the command prompt, type the command below. You need to substitute the path to merger.zip and path to karma-spark-0.0.1-SNAPSHOT-shaded.jar with the paths you just wrote down. Meanwhile, “part-00002” and “ads-hair-eye-sample” are 2 input files and “karma-out” is the output file name.
-After the command is typed and run successfully, you can see the results in the file karma-out.
+Open adsWorkflow, copy the annoted command lines and type it on the command prompt. You need to substitute the path to merger.zip and path to karma-spark-0.0.1-SNAPSHOT-shaded.jar with the paths you just wrote down. Meanwhile, “part-00002” and “ads-hair-eye-sample” are 2 input files and “karma-out” is the output file name. For examlple,
 
 
 ```
@@ -130,9 +127,4 @@ After the command is typed and run successfully, you can see the results in the 
        karma-out
 ```
 
-
-
-
-
-
-
+After the command is typed and run successfully, you can see the results in the file karma-out.
